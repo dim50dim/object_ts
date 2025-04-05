@@ -223,7 +223,7 @@ document.querySelector('.b-13').addEventListener('click', (): void => {
 // Функция получает объект как аргумент, возвращает значение свойства hit. Не забывайте прописывать тип функции!!!
 
 const f_14 = ({ hit }: { hit: number[] }): number[] => {
-    return obj_13.hit;
+    return hit;
 }
 
 document.querySelector('.b-14').addEventListener('click', (): void => {
