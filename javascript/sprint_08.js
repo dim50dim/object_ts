@@ -55,8 +55,8 @@ const obj_06 = {
 };
 const f_06 = () => {
     let out = '';
-    for (let key in obj_06) {
-        out += obj_06[key] + '_';
+    for (let color in obj_06) {
+        out += obj_06[color] + '_';
     }
     return out;
 };

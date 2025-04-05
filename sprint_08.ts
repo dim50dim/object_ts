@@ -78,8 +78,8 @@ const obj_06: { 'yellow': string, 'red': string, 'green': string } = {
 
 const f_06 = ():string => {
    let out : string = '';
-   for(let key in obj_06){
-    out += obj_06[key] + '_';
+   for(let color in obj_06){
+    out += obj_06[color] + '_';
    }
    return out;
 }
