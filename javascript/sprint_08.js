@@ -84,7 +84,6 @@ const f_08 = () => {
     for (let key in obj_08) {
         obj_08[key] = obj_08[key].trim().toLowerCase();
     }
-    console.log(obj_08);
 };
 document.querySelector('.b-8').addEventListener('click', () => {
     f_08();
@@ -96,10 +95,11 @@ const obj_09 = {
     band: 'System of a Town',
     members: ['Serj', 'Daron', 'Shavo', 'John']
 };
-// const f_09 = (): тут укажите тип => {
-// }
+const f_09 = () => {
+    return obj_09.members.sort((a, b) => a.localeCompare(b));
+};
 document.querySelector('.b-9').addEventListener('click', () => {
-    // f_09();
+    f_09();
     console.log(obj_09);
 });
 // Task 10

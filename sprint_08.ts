@@ -116,7 +116,7 @@ const f_08 = () : void => {
       for(let key in obj_08){
         obj_08[key] = obj_08[key].trim().toLowerCase();
       } 
-      console.log(obj_08);
+     
         
 }
 
@@ -133,12 +133,12 @@ const obj_09: { band: string, members: string[], location?: string } = {
     members: ['Serj', 'Daron', 'Shavo', 'John']
 }
 
-// const f_09 = (): тут укажите тип => {
-    
-// }
+const f_09 = (): string[] => {
+    return obj_09.members.sort((a,b) => a.localeCompare(b));
+}
 
 document.querySelector('.b-9').addEventListener('click', (): void => {
-    // f_09();
+    f_09();
     console.log(obj_09);
 });
 
