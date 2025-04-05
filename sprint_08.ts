@@ -212,7 +212,7 @@ const obj_13: { title: string, step: number, defense: number, stamina: number, h
 }
 
 const f_13 = ({ title, step }: { title: string, step: number }): string => {
-  return obj_13.title;
+  return title;
 }
 
 document.querySelector('.b-13').addEventListener('click', (): void => {
