@@ -1,7 +1,12 @@
 "use strict";
 // Task 01
 // Создайте объект obj_01, который содержит свойство name равное 'Gedeon', поле name2 равное 'Richter', поле year равно 1944. Самостоятельно задайте типы данных для данных свойств. Выведите объект в консоль.
-// const obj_01: { name: string
+const obj_01 = {
+    'name': 'Gedeon',
+    'name2': 'Rechter',
+    "year": 1944,
+};
+console.log(obj_01);
 // Task 02
 // Создайте объект obj_02 с полями: role, email, vip. Поле role содержит строку 'admin', поле email содержит 'ppprrr@mail.ua', а поле vip укажите как необязательное, числовое. Выведите объект в консоль.
 // const obj_02 
