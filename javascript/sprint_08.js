@@ -116,10 +116,12 @@ const obj_10 = {
         '14235687'
     ]
 };
-// const f_10 = (): тут укажите тип => {
-// }
+const f_10 = () => {
+    obj_10.data = obj_10.data.filter(item => item.length === 6);
+    return obj_10.data;
+};
 document.querySelector('.b-10').addEventListener('click', () => {
-    // f_10();
+    f_10();
     console.log(obj_10.data);
 });
 // Task 11
