@@ -58,11 +58,13 @@ const obj_05: { name: string, specifications: string[] } = {
     specifications: ["IntenseSpeed", "Intelligence", "Teleportation", "Bite"]
 }
 
-// const f_05 = (): тут укажите тип => {
-// }
+const f_05 = (): string => {
+ const str : string = obj_05.specifications.map(item => item).join('_');
+      return str;
+}
 
 document.querySelector('.b-5').addEventListener('click', (): void => {
-    // document.querySelector('.out-5').textContent = f_05();
+    document.querySelector('.out-5').textContent = f_05();
 });
 
 

@@ -40,10 +40,12 @@ const obj_05 = {
     name: 'Wolves',
     specifications: ["IntenseSpeed", "Intelligence", "Teleportation", "Bite"]
 };
-// const f_05 = (): тут укажите тип => {
-// }
+const f_05 = () => {
+    const str = obj_05.specifications.map(item => item).join('_');
+    return str;
+};
 document.querySelector('.b-5').addEventListener('click', () => {
-    // document.querySelector('.out-5').textContent = f_05();
+    document.querySelector('.out-5').textContent = f_05();
 });
 // Task 06
 // Создан объект obj_06. Напишите функцию, которая возвращает строку значений с разделителем между значениями через подчеркивание. Тип функции укажите самостоятельно. Перебор цикла выполнять циклом for in.
