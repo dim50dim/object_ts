@@ -173,9 +173,10 @@ document.querySelector('.b-14').addEventListener('click', () => {
 });
 // Task 15
 // Функция получаем объект как аргумент, и возвращает true, если есть хотя бы один удар (hit) по силе больший чем 5 и false в противном случае.
-// const f_15 = ({ hit }: { hit: number[] }): тут напишите тип => {
-// }
+const f_15 = ({ hit }) => {
+    return hit.some(item => item > 5);
+};
 document.querySelector('.b-15').addEventListener('click', () => {
-    // document.querySelector('.out-15').textContent = String(f_15(obj_13));
+    document.querySelector('.out-15').textContent = String(f_15(obj_13));
 });
 //# sourceMappingURL=sprint_08.js.map
