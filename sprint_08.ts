@@ -114,8 +114,10 @@ const obj_08: { name: string, email: string, username: string } = {
 const f_08 = () : void => {
 
       for(let key in obj_08){
-        obj_08[key].trim().toLowerCase();
-      }   
+        obj_08[key] = obj_08[key].trim().toLowerCase();
+      } 
+      console.log(obj_08);
+        
 }
 
 document.querySelector('.b-8').addEventListener('click', (): void => {
