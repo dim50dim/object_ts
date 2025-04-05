@@ -111,15 +111,17 @@ const obj_08: { name: string, email: string, username: string } = {
     username: 'Rundic UOzlik'
 }
 
-// const f_08 = (): тут укажите тип => {
-  
-// }
+const f_08 = () : void => {
+
+      for(let key in obj_08){
+        obj_08[key].trim().toLowerCase();
+      }   
+}
 
 document.querySelector('.b-8').addEventListener('click', (): void => {
-    // f_08();
+    f_08();
     console.log(obj_08);
 });
-
 
 // Task 09
 // Создан объект obj_09. Напишите функцию, которая сортирует строки в свойстве members по алфавиту. 

@@ -80,10 +80,13 @@ const obj_08 = {
     email: 'potter_DEER@howards.MagiC ',
     username: 'Rundic UOzlik'
 };
-// const f_08 = (): тут укажите тип => {
-// }
+const f_08 = () => {
+    for (let key in obj_08) {
+        obj_08[key].trim().toLowerCase();
+    }
+};
 document.querySelector('.b-8').addEventListener('click', () => {
-    // f_08();
+    f_08();
     console.log(obj_08);
 });
 // Task 09
