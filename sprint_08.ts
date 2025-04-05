@@ -59,8 +59,7 @@ const obj_05: { name: string, specifications: string[] } = {
 }
 
 const f_05 = (): string => {
- const str : string = obj_05.specifications.map(item => item).join('_');
-      return str;
+   return obj_05.specifications.join('_');
 }
 
 document.querySelector('.b-5').addEventListener('click', (): void => {
@@ -77,12 +76,16 @@ const obj_06: { 'yellow': string, 'red': string, 'green': string } = {
     green: "G",
 }
 
-// const f_06 = ():тут укажите тип => {
-   
-// }
+const f_06 = ():string => {
+   let out : string = '';
+   for(let key in obj_06){
+    out += obj_06[key] + '_';
+   }
+   return out;
+}
 
 document.querySelector('.b-6').addEventListener('click', (): void => {
-    // document.querySelector('.out-6').textContent = f_06();
+    document.querySelector('.out-6').textContent = f_06();
 });
 
 // Task 07
