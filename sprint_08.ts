@@ -191,7 +191,7 @@ const obj_12: { title: string, step: number, defense: number, stamina: number, h
     hit: [3, 4, 5]
 }
 
-const f_12 = (): {title: string, step: number, defense:number , stamina:number} => {
+const f_12 = (): {title: string, step: number, defense:number , stamina:number}  => {
      const {hit,...rest} = obj_12;
      return rest;
 }
@@ -223,7 +223,7 @@ document.querySelector('.b-13').addEventListener('click', (): void => {
 // Функция получает объект как аргумент, возвращает значение свойства hit. Не забывайте прописывать тип функции!!!
 
 const f_14 = ({ hit }: { hit: number[] }): number[] => {
-    return;
+    return obj_13.hit;
 }
 
 document.querySelector('.b-14').addEventListener('click', (): void => {

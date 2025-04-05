@@ -166,7 +166,7 @@ document.querySelector('.b-13').addEventListener('click', () => {
 // Task 14
 // Функция получает объект как аргумент, возвращает значение свойства hit. Не забывайте прописывать тип функции!!!
 const f_14 = ({ hit }) => {
-    return;
+    return obj_13.hit;
 };
 document.querySelector('.b-14').addEventListener('click', () => {
     document.querySelector('.out-14').textContent = f_14(obj_13).join(' ');
