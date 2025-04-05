@@ -142,7 +142,8 @@ const obj_12 = {
     hit: [3, 4, 5]
 };
 const f_12 = () => {
-    return;
+    const { hit, ...rest } = obj_12;
+    return rest;
 };
 document.querySelector('.b-12').addEventListener('click', () => {
     console.log(f_12());
@@ -157,7 +158,7 @@ const obj_13 = {
     hit: [3, 3, 4]
 };
 const f_13 = ({ title, step }) => {
-    return;
+    return obj_13.title;
 };
 document.querySelector('.b-13').addEventListener('click', () => {
     document.querySelector('.out-13').textContent = f_13(obj_13);
